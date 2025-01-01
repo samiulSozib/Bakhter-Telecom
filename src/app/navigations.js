@@ -14,6 +14,7 @@ export const getNavigations=(t)=>{
   { name: t('DASHBOARD'), path: "/dashboard/default", icon: "dashboard" },
   { label: t('PAGES'), type: "label" },
   { name: t('PRODUCT_PACKAGE'), path: "/packages/default", icon: "dashboard" },
+  { name: t('CUSTOM_RECHARGE'), path: "/custom_recharge/default", icon: "dashboard" },
   { name:t('TRANSACTIONS'), path: "/transaction/default", icon: "dashboard" },
   { name: t('ORDERS'), path: "/order/default", icon: "dashboard" },
   { name: t('SUB_RESELLER'), path: "/sub-reseller/default", icon: "dashboard" },
