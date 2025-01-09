@@ -3,7 +3,7 @@ import {base_url} from '../../utils/constant'
 import { SERVICE_CATEGORIES_REQUEST, SERVICE_CATEGORIES_SUCCESS, SERVICE_CATEGORIES_FAIL } from "../constants/serviceCategoriesConstant";
 
 
-const service_categories_url=`${base_url}/service_categories`
+const service_categories_url=`${process.env.REACT_APP_BASE_URL}/service_categories`
 
 export const serviceCategories=()=>{
     return async (dispatch)=>{
