@@ -201,7 +201,7 @@ export function categorizeServices(data) {
       ...categoriesObject[categoryId]
     }));
   }
-  console.log(data)
+  //console.log(data)
 
   return categorized;
 }

@@ -96,13 +96,13 @@ export default function StatCards() {
   }, [dispatch]);
 
   useEffect(()=>{
-    console.log(serviceCategories)
+    //console.log(serviceCategories)
   },[dispatch])
 
   useEffect(() => {
     if (serviceCategoryList) {
       const categorized = categorizeServices(serviceCategoryList);
-      console.log(categorized);
+      //console.log(categorized);
       setCategorizedServices(categorized);
     }
   }, [serviceCategoryList]);

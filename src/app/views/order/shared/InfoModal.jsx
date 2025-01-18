@@ -155,7 +155,7 @@ export default function InfoModal({ open, onClose, orderDetails, currency_prefer
       const imgData = canvas.toDataURL("image/png");
       
       // Debugging: To inspect the canvas content in the console
-      console.log(canvas);
+      //console.log(canvas);
   
       // Create a link to download the image
       const link = document.createElement("a");
@@ -243,7 +243,7 @@ export default function InfoModal({ open, onClose, orderDetails, currency_prefer
                 {orderDetails && (
                   <>
                     <Box display="flex" justifyContent="space-between" my={1}>
-                      <Label sx={{ color: "black" }}>{t('BUNDLE_TYPE')}</Label>
+                      <Label sx={{ color: "black" }}>{t('BUNDLE_TITLE')}</Label>
                       <Value>{orderDetails.bundle.bundle_title}</Value>
                     </Box>
                     <Box display="flex" justifyContent="space-between" my={1}>

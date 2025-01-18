@@ -36,7 +36,7 @@ export const NotificationProvider = ({ children }) => {
       const res = await axios.post("/api/notification/delete", { id: notificationID });
       dispatch({ type: "DELETE_NOTIFICATION", payload: res.data });
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     }
   };
 
@@ -45,7 +45,7 @@ export const NotificationProvider = ({ children }) => {
       const res = await axios.post("/api/notification/delete-all");
       dispatch({ type: "CLEAR_NOTIFICATIONS", payload: res.data });
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     }
   };
 
@@ -54,7 +54,7 @@ export const NotificationProvider = ({ children }) => {
       const res = await axios.get("/api/notification");
       dispatch({ type: "LOAD_NOTIFICATIONS", payload: res.data });
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     }
   };
 
@@ -63,7 +63,7 @@ export const NotificationProvider = ({ children }) => {
       const res = await axios.post("/api/notification/add", { notification });
       dispatch({ type: "CREATE_NOTIFICATION", payload: res.data });
     } catch (e) {
-      console.error(e);
+      //console.error(e);
     }
   };
 
